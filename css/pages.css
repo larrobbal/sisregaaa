@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body
+{
+    font-family: "Roboto", sans-serif;
+}
+
+button
+{
+    background-color: #B72223; 
+    color: #FFFFFF; 
+    border: 2px solid #B72223;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin: 5px 5px 5px 5px;
+    padding: 4px 8px;
+}
+
+button:hover
+{
+    background-color: #FFFFFF; 
+    color: #B72223; 
+    border: 2px solid #B72223;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body.pages
+{
+    font-family: "Roboto", sans-serif;
+    margin-left: 80px;
+}
+
+.title-page
+{
+    width: 100%;
+    color: #FFF;
+    font-weight: bolder;
+    background-color: #B72223;
+    text-align: center;
+    padding: 2.5px 0 2.5px 0;
+    margin-bottom: 10px;
+}
+.review-ases
+{
+    color: #000;
+    display: inline-block;
+    position: relative;
+    border: #FFF;
+}
+.review-alumn
+{
+    display: inline-block;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.asesT, .alumnT, .listaDetTable, .materias-table
+{
+    border-collapse: collapse;
+}
+table.asesT tbody, table.alumnT tbody, .listaDetTable tbody, table.materias-table tbody
+{
+    display: block;
+    height: 250px;       
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.asesT tr, .alumnT tr, .listaDetTable tr, .materias-table tr
+{
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+}
+.asesT td, .alumnT td, .listaDetTable td, .materias-table td
+{
+    padding: 0 5px 0 5px;
+    border-left: .5px dotted #BFBFBF;
+    border-right: .5px dotted #BFBFBF;
+}
+
+.asesT th, .alumnT th, .listaDetTable th, .materias-table th
+{
+    background-color: #B72223;
+    border-left: .5px dotted #BFBFBF;
+    border-right: .5px dotted #BFBFBF;
+    position: sticky;
+    top: 0;
+    color: #FFF;
+}
+
+table.asesT tr:nth-child(even), table.alumnT tr:nth-child(even), table.listaDetTable tr:nth-child(even), table.materias-table tr:nth-child(even)
+{
+    background-color: #eee;
+}
+table.asesT tr:nth-child(odd), table.alumnT tr:nth-child(odd), table.listaDetTable tr:nth-child(odd), table.materias-table tr:nth-child(odd)
+{
+    background-color: #fff;
+}
+
+.pea
+{
+    max-width: 35%;
+    display: inline;
+}
+
+.uam
+{
+    display: grid;
+    display: inline;
+    margin: auto;
+    max-width: 45%;
+}
+
+.uamHead
+{
+    max-width: 30%;
+    text-align: right;
+    float: right;
+}
+.bar
+{
+    max-width: 33%;
+    max-height: 150px;
+}
+
+.header
+{
+    display: block;
+}
+
+.lista-asesorias br
+{
+    line-height:2;
+}
+.forma-asesorias br, .crea-alumno br, .crea-asesoria br, .crea-periodo br, .crea-asesor br
+{
+    line-height: 30px;
+}
+a#inputValues input
+{
+    margin-right: 5px;
+}
+.div-form, .div-materias
+{
+    width: 90%;
+    display: inline-block;
+}
+
+.div-form-ext
+{
+    width: 100%;
+    display: inline-block;
+}
+.forma-asesorias, #hide-form2, .forma-detalle, .info-alumno, .info-periodo, .info-asesor
+{
+    display: inline-block;
+    position: relative;
+    padding: 0 5% 0 5%;
+}
+.forma-detalle
+{
+    box-sizing: border-box; 
+    display: inline-block;
+}
+
+.materias-table
+{
+    width: 100%;
+}
+
+.crea-asesoria input[type=text], input[type=time], input[type=date], .crea-alumno input[type=text], input[type=time], input[type=date], .crea-periodo input[type=text], input[type=time], input[type=date], .crea-asesor input[type=text], input[type=time], input[type=date]
+{
+    border: none;
+    border-bottom: 1px solid #777;
+    padding-left: 5px;
+}
+
+.crea-alumno input[type=text]#curpAlumno, input[type=text]#idAlumno
+{
+    text-align: center;
+    width: 150px;
+}
+
+.tittle-add ,.tittle-materias
+{
+    background: #B72223;
+    width: 100%;
+    padding: 2.5px 0 2.5px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.tittle-add a, .tittle-materias a
+{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.tabSpace, a.inputValues
+{
+    margin-left: 15px;
+}
+
+form input#idAsesoria
+{
+    width: 70px;
+    text-align: center;
+}
+
+form input#nombreMateria
+{
+    width: 250px;
+    text-align: center;
+}
+
+form input#direccionAlumno
+{
+    width: 500px;
+}
+
+form input#matriculaAses,input#horarioAsesoria,input#horasAsesoria
+{
+    width: 120px;
+    text-align: center;
+}
+
+button#sendData
+{
+    margin: 10px 0 10px 0;
+}
+
+form.consulta-detalle
+{
+    margin-bottom: 2%;
+}
+
+.div-ases-detail, .form-alum-det, .form-alum-det-edit, .form-ases-det, .form-ases-det-edit
+{
+  text-align: center;
+  margin: 20px 0 20px 0;
+  border: 1px solid #999;
+  padding: 15px 5px 15px 5px;
+}
+
+.info-ases-det, .info-alum-det
+{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.div-ases-detail label, .info-alum-det label
+{
+  margin: 0 20px 0 20px;
+}
+
+.div-ases-detail .nombreMateria
+{
+  width: 400px;
+}
+
+.div-ases-detail .nombreMateria, .div-ases-detail .idAsesoria, .div-ases-detail .nombreAsesor, .div-ases-detail .salon, .div-ases-detail .edificio, .div-ases-detail .horario
+{
+    text-align: center;
+    margin: 5px 0 5px 0;
+    border: none;
+	border-bottom: 1px dotted #AAA;
+}
+
+.info-alum-det input[type=text]
+{
+    text-align: center;
+    margin: 5px 0 5px 0;
+    border: none;
+    border-bottom: 1px dotted #AAA;
+    width: 200px;
+}
+
+.form-alum-det-edit input[type=text], .form-ases-det-edit input[type=text]
+{
+    text-align: center;
+    margin: 5px 0 5px 0;
+    border: none;
+    border-bottom: 1px dotted #AAA;
+    width: 200px;
+    background: #CCC;
+}
+
+.divPDFreport
+{
+    padding-top: 20px;
+}
+.tituloExternosPDF
+{
+    text-align: center;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 20px 0 20px 0;
+}
+.tituloExternosPDF div
+{
+    display: table-cell;
+}
+.content-titulo
+{
+    text-align: center;
+    width: 200px;
+}
+
+.content-titulo br
+{
+    line-height: 2px;
+}
+.content-titulo a.documentTitle
+{
+    font-weight: bolder;
+}
+
+.values-select-det, .consulta-detalle, .forma-detalle
+{
+    width: 100%;
+}
+
+.values-select-det
+{
+    margin-left: 3%;
+}
+
+img.add-asesoria-button, img.add-alumno-button, img.add-alumno-list-button, img.add-materia-button
+{
+    width:70px;
+    height: auto;
+}
+
+.add-asesoria-button-div, .add-alumno-button-div, .add-alumno-list-div, .add-materia-button-div
+{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    padding-left: 2.5%;
+}
+
+.div-report-selector, .form-pdf-selector
+{
+    padding-left: 2.5%;
+    width: fit-content;
+}
+
+span.title-page-ext
+{
+    width: 100%;
+    color: #FFF;
+    font-weight: bolder;
+    background-color: #B72223;
+    text-align: center;
+    padding: 2.5px 0 2.5px 0;
+    margin-bottom: 10px;
+}
+
+div.divListaMaterias
+{
+    text-align: center;
+}
+
+.fieldset-dias-semana
+{
+    width: 250px;
+    display:inline-block;
+}
+
+.time-text
+{
+    width: 40px;
+}

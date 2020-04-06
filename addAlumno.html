@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content=""/>
+		<link rel="stylesheet" href="css/divisores.css">
+		<link rel="stylesheet" href="css/formas.css">
+		<link rel="stylesheet" href="css/pages.css">
+	</head>
+    <script src="js/function.js" type="text/javascript"></script>
+    <body class="externa">
+        <div class="tittle-add">Registro de Alumno</div>
+			<div class="info-alumno" id="alumnoInfo">
+				<form class="crea-alumno" id="creaAlumno">
+					<label>Id. Alumno: </label><input type="text" id="idAlumno" placeholder="Ej. 000000000000" maxlength="12" onkeypress="return validatenumerics(event);" required><br>
+					<label>Nombre: </label><input type="text" id="nombreAlumno" required>
+					<span class="tabSpace"></span><label>Apellido Paterno: </label><input type="text" id="appAlumno" required></span>
+					<span class="tabSpace"><label>Apellido Materno: </label><input type="text" id="apmAlumno"></span>	
+					<span class="tabSpace"><label>CURP: </label><input type="text" id="curpAlumno" placeholder="Ej. XAXX010101HDFXAX00" required maxlength="18" onblur="ChangeCase(this);"></span>
+					<br><label>Telefono: </label><input type="text" id="telAlumno" placeholder="Ej. 55-5555-55555" maxlength="10" onkeypress="return validatenumerics(event);">
+					<span class="tabSpace"><label>E-mail: </label><input type="text" id="mailAlumno" placeholder="Ej. example@mail.com"></span>
+					<span class="tabSpace"></span><label>Dirección: </label><input type="text" id="direccionAlumno"></span>
+					<br><label>Fecha Inicio: </label><input type="date" id="fechaInicio" required>
+					<span class="tabSpace"><label>Plan de Estudios: </label></span>
+					<select id="selectPlanEstud">
+						<option value="1">22</option>
+						<option value="2">33</option>
+						<option value="3">INEA</option>
+					</select>
+				</form>
+				<button id="sendData" onclick="sendValues('addAlumno')">Enviar</button>
+			</div>
+    </body>
+</html>

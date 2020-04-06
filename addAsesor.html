@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content=""/>
+		<link rel="stylesheet" href="css/divisores.css">
+		<link rel="stylesheet" href="css/formas.css">
+		<link rel="stylesheet" href="css/pages.css">
+	</head>
+    <script src="js/function.js" type="text/javascript"></script>
+    <body class="externa" onload="loadAddAsesor();">
+        <div class="tittle-add">Registro de Asesor</div>
+			<div class="info-asesor" id="asesorInfo">
+				<form class="crea-asesor" id="creaAsesor">
+					<label>Matricula: </label><input type="text" id="matriculaAses" placeholder="Ej. 000000000000" maxlength="12" onkeypress="return validatenumerics(event);" required><br>
+					<label>Nombre: </label><input type="text" id="nombreAses" required>
+					<span class="tabSpace"></span><label>Apellido Paterno: </label><input type="text" id="apPAses" required></span>
+					<span class="tabSpace"><label>Apellido Materno: </label><input type="text" id="apMAses" required></span>	
+					<span class="tabSpace"><label>Carrera: </label><input type="text" id="carrera" list="lista-carreras" required><datalist id="lista-carreras"></datalist></span>
+					<br><label>Telefono: </label><input type="text" id="telAses" placeholder="Ej. 55-5555-55555" maxlength="10" onkeypress="return validatenumerics(event);">
+					<span class="tabSpace"><label>E-mail: </label><input type="text" id="mailAses" placeholder="Ej. example@mail.com"></span>
+					<br><label>Fecha Inicio: </label><input type="date" id="fechaInicio" required>
+				</form>
+				<button id="sendData" onclick="sendValues('addAsesor')">Enviar</button>
+			</div>
+    </body>
+</html>

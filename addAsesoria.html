@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content=""/>
+        <link rel="stylesheet" href="css/divisores.css">
+        <link rel="stylesheet" href="css/formas.css">
+        <link rel="stylesheet" href="css/pages.css">
+    </head>
+    <script src="js/function.js" type="text/javascript"></script>
+    <body class="externa" onload="loadAddAsesoria();">
+        <div class="div-form-ext">
+            <div class="tittle-add"><a id="hide-form1" href="#">Registro de Asesoria</a></div>
+            <div class="forma-asesorias" id="formAsesoria">
+                <form class="crea-asesoria" id="creaAsesoria">
+                    <label>Id. Asesoria: </label><input type="text" id="idAsesoria" placeholder="Ej. 0000" maxlength="4" onkeypress="return validatenumerics(event);" required>
+                    <br><label>Materia: </label><input type="text" id="nombreMateria" placeholder="Nombre materia" list="materia-list" required>
+                    <datalist id="materia-list" class="materia-list"></datalist>
+                    <span class="tabSpace"><label>Asesor: </label></span>
+                    <input type="radio" name="selection" id="matricula" value="matriculaAses" onchange="loadValues();">Matricula
+                    <input type="radio" name="selection" id="nombre" value="nombreAses" onchange="loadValues();">Nombre
+                    <a class="inputValues" id="inputValues"></a>
+                    <br><label>Salon: </label><select id="selectSalon"></select>
+                    <span class="tabSpace"><label>Horario de asesoria: </label></span><input type="time" id="horarioAsesoria" step="2" required>
+                    <br><label>Periodo: </label><input type="date" id="periodoAses" required>
+                    <span class="tabSpace"><label>Horas de asesoria: </label></span><input type="number" id="horas" class="time-text" maxlength="2" max="12" min="0" required>:<input type="number" id="minutos" class="time-text" maxlength="2" step="15" max="45" min="0" required>
+                    <span class="fieldset-dias-semana"><fieldset>      
+                        <legend>Días</legend>      
+                        <input type="checkbox" name="day" value="lunes">L
+                        <input type="checkbox" name="day" value="martes">Ma
+                        <input type="checkbox" name="day" value="miercoles">Mi
+                        <input type="checkbox" name="day" value="jueves">J
+                        <input type="checkbox" name="day" value="viernes">V
+                    </fieldset></span>
+                    <br>
+                </form>
+                <button id="sendData" onclick="sendValues('addAsesoria')">Enviar</button>
+            </div>
+        </div>
+    </body>
+</html>

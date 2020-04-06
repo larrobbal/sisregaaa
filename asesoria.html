@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Asesorias - SISREGAAA</title>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content=""/>
+		<link rel="stylesheet" href="css/divisores.css">
+		<link rel="stylesheet" href="css/formas.css">
+		<link rel="stylesheet" href="css/pages.css">
+	</head>
+    <script src="js/function.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a116730c44.js" crossorigin="anonymous"></script>
+	<body onload="loadAsesoria();" class="pages">
+        <div id="navBar" ></div>
+        <div class="header">
+            <div class="pea"><img class="bar" src="img/sisregaaaBar.png"></div>
+            <div class="uam"><img class="uamHead" src="img/LogoA2Digitales.jpg"></div>
+        </div>
+        <div class="title-page">Asesorias</div>
+        <div class="div-form">
+            <div class="tittle-add"><a id="hide-form2" href="#">Consulta detalles</a></div>
+            <div class="forma-detalle" id="formDetalle">
+                <form class="consulta-detalle">
+                    <input type="radio" name="select-det" id="asesor-det" value="nombreAses" onchange="loadValuesDetail('asesoria');">Asesor
+                    <input type="radio" name="select-det" id="materia-det" value="nombreMateria" onchange="loadValuesDetail('asesoria');">Materia
+                    <a class="values-select-det" id="values-select-det"></a>
+                </form>
+                <div class="info-ases-det" id="info-ases-det"></div>
+            </div>
+        </div>
+        <div class="add-asesoria-button-div"><a href='#' onclick="addAsesoriaWindow();"><img class="add-asesoria-button" src="img/addAsesoriaButton.png"></a></div>
+    </body>
+</html>
